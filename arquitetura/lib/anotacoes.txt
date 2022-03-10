@@ -1,0 +1,5 @@
+Os usecases são as regras de negócio.
+Os controllers tratam as regras de negócio, ou seja , os usecases.
+
+
+* As pages, widgets e componets ficam na pasta de UI.
