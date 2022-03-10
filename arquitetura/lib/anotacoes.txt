@@ -11,4 +11,5 @@ buscando do cache , firebase ou uma api.
     -  Data transfer object.
     - é um conteiner , onde vai ter um objeto dentro dele.
     - nesse caso , vai ter um toMap e um fromMap.
-    
+
+* O core vai ser reponsável por ser acessível para toda a aplicação.
