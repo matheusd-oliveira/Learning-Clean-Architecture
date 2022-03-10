@@ -3,3 +3,12 @@ Os controllers tratam as regras de negócio, ou seja , os usecases.
 
 
 * As pages, widgets e componets ficam na pasta de UI.
+* A camada de data trabalha com input e output de dados. Sejam eles,
+buscando do cache , firebase ou uma api.
+
+* A responsabilidade do repositories é salvar.
+* O que é o dto?
+    -  Data transfer object.
+    - é um conteiner , onde vai ter um objeto dentro dele.
+    - nesse caso , vai ter um toMap e um fromMap.
+    
