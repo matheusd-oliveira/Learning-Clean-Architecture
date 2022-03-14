@@ -12,10 +12,14 @@ class CarroController {
   ) {
     getCarrosPorCor('vermelho');
   }
-  
+
   late CarroEntity carro;
   getCarrosPorCor(String cor) {
-    carro = _getCarrosPorCorUseCase(cor);
+    var result = _getCarrosPorCorUseCase(cor);
+    result.fold(
+      (error) => 'error',
+      (sucess) => carro = sucess,
+    );
   }
 
   salvarCarroFavorito(CarroEntity carro) async {
