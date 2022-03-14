@@ -10,7 +10,7 @@ class GetCarrosPorCorRepositoryImp implements GetCarrosPorCorRepository {
   GetCarrosPorCorRepositoryImp(this._getCarrosPorCorDataSource);
 
   @override
-  Future<Either<Exception, CarroEntity>> call(String cor) {
+  Either<Exception, CarroEntity> call(String cor) {
     // Chamamos a api e ela respondeu um json;
 
     return _getCarrosPorCorDataSource(cor);
